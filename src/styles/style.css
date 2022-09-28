@@ -1,0 +1,300 @@
+#mainContainer {
+  background: linear-gradient(-45deg, #192841, #1c2e4a, #203354, #23395d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* height: 100vh; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#container {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: "80%";
+}
+
+#itemDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 30;
+  border: 0.5px solid grey;
+  border-radius: 10%;
+  /* box-shadow: ; */
+  box-shadow: 5px 5px 5px 5px #888888;
+  width: 25%;
+  margin-top: 10;
+  margin: 20px;
+  gap: 20;
+  /* margin: 0.2em; */
+  align-items: center;
+  background-color: whitesmoke;
+
+  transition: transform 0.2s; /* Animation */
+}
+
+#itemDiv:hover {
+  transform: scale(1.05);
+}
+
+#titlePrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+#img {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* STYLLING THE HEADING */
+#headline {
+  color: white;
+  letter-spacing: 0.3em;
+  text-align: center;
+  line-height: 3em;
+}
+
+#headContainer {
+  text-align: center;
+}
+
+#btn {
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--color);
+  transition: all 0.3s;
+  position: relative;
+
+  text-align: center;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0 6px 30px -10px #cccccc;
+  outline: none;
+}
+
+#btn:hover {
+  transform: translateX(5px) translateY(-7px);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* STYLLING THE HEADER */
+/* NOTE: Every id of "Header" component will start from "head" keyword, just to distinguish it from other
+style sheet code, as we will have only one stylesheet in the whole application */
+
+#headHeader {
+  height: 14vh;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  border-bottom: 2px solid black;
+}
+
+#headHeaderContentImg {
+  border-radius: 60px;
+}
+
+#headHeaderContentList {
+  list-style: none;
+  /* display: inline; */
+}
+
+#headHeaderContentList li {
+  margin: 15px;
+  margin-top: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#headHeaderContentList li:hover {
+  color: red;
+}
+
+#headSearchBar {
+  display: flex;
+  border: 2px solid blue;
+  border-radius: 40px;
+  height: 50px;
+  width: 250px;
+}
+
+#headSearchInput {
+  border: none;
+  outline: none;
+}
+
+#headSearchIcon {
+  cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* STYLLING THE COVER */
+/* NOTE: Every id of "Cover" component will start from "cover" keyword, just to distinguish it from other
+style sheet code, as we will have only one stylesheet in the whole application */
+
+#coverMainContainer {
+  background-image: url("../images/Ecommerce_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+#coverSignIn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#signIn {
+  width: 330px;
+  border-radius: 10px;
+  padding: 40px 30px;
+  margin-top: 100px;
+  box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgba(147, 149, 151, 0.671);
+  background-color: rgba(17, 25, 62, 0.381)
+}
+
+#signIn .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: blue;
+}
+
+#signIn .field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #e0d2d2;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+}
+
+.field input::placeholder {
+  color: #e0d2d2a6;
+}
+
+.field:nth-child(2) {
+  margin-top: 20px;
+}
+
+.field span {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+#coverButton{
+  margin: 25px 0 0 0;
+  width: 100%;
+  height: 50px;
+  color: rgb(9, 9, 70);
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+  margin-top: 40px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#signIn .or{
+    color: rgb(12, 12, 70);
+    margin-top: 9px;
+  }
+
+  .icon-button{
+    margin-top: 15px;
+  }
+  
+  .icon-button span{
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: black;
+    border-radius: 5px;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+  }
+  
+  .icon-button span.facebook{
+    margin-right: 17px;
+  }
+  
+  #coverButton:hover,
+  .icon-button span:hover{
+    background-color: #babecc8c;
+  }
+
+
+  /* MEDIA QUERIES FOR FORM */
+  @media (max-width:400px) {
+    #signIn{
+      width: 260px;
+    }
+    .text{
+      font-size: 20px;
+    }
+    #signIn .field{
+      height: 40px;
+    }
+    .field input{
+        font-size: 16px;
+    }
+    .field span{
+      position: absolute;
+      width: 40px;
+      line-height: 40px;
+    }
+    #coverButton{
+      height: 40px;
+      font-size: 17px;
+    }
+  
+    .icon-button span{
+      padding-left:3px;
+      padding-right: 3px;
+      padding-top: 4px;
+      font-size: 16px;
+      padding-bottom: 3px;
+  
+    }
+    .icon-button span.facebook{
+      margin-right: 3px;
+  
+    }
+  }
