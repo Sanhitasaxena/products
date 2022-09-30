@@ -12,22 +12,22 @@ const Cover = () => {
           <div id="signIn">
             {" "}
             {/* content */}
-            <div class="text">Login Form</div>
+            <div className="text">Login Form</div>
             <form action="#">
-              <div class="field">
+              <div className="field">
                 <span><MdEmail /></span>
                 <input type="text" placeholder="Email Id" required />
               </div>
 
-              <div class="field">
+              <div className="field">
                 <span><FaLock /></span>
                 <input type="password" placeholder="Password" />
               </div>
             </form>
             <button id="coverButton">Log in</button>
-            <div class="or">Or</div>
-            <div class="icon-button">
-              <span class="facebook">
+            <div className="or">Or</div>
+            <div className="icon-button">
+              <span className="facebook">
                 <ImFacebook2/> Facebook
               </span>
 
