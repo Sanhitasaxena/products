@@ -1,14 +1,16 @@
-import Products from "./components/products";
+// import Products from "./components/products";
 import Header from "./components/header";
 import "../src/styles/style.css"
 import Cover from "./components/cover";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="App">
        <Header/>
        <Cover/>
-       <Products/>
+       <Footer/>
+       {/* <Products/> */}
        
     </div>
   );

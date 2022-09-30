@@ -35,9 +35,12 @@ const Cover = () => {
                 <FaGoogle/> Google
               </span>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
+      {/* <div id="wave" className="container-fluid">
+          
+      </div> */}
     </>
   );
 };
