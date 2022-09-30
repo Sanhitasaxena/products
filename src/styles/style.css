@@ -100,8 +100,8 @@ style sheet code, as we will have only one stylesheet in the whole application *
 
 #headHeader {
   height: 14vh;
-  position: sticky;
-  top: 0px;
+  /* position: sticky; */
+  /* top: 0px; */
   background-color: white;
   border-bottom: 2px solid black;
 }
@@ -181,7 +181,7 @@ style sheet code, as we will have only one stylesheet in the whole application *
  
 }
 
-#coverMainContainer::before{
+/* #coverMainContainer::before{
   content: "";
   position: absolute;
   bottom: 0;
@@ -191,15 +191,9 @@ style sheet code, as we will have only one stylesheet in the whole application *
   background: url("../images/wave3.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-/* #wave{
-  background-image: url("../images/wave.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
 } */
+
+
 
 #coverSignIn {
   display: flex;
@@ -342,3 +336,15 @@ style sheet code, as we will have only one stylesheet in the whole application *
   
     }
   }
+
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* STYLLING THE FOOTER */
+/* NOTE: Every id of "Footer" component will start from "footer" keyword, just to distinguish it from other
+style sheet code, as we will have only one stylesheet in the whole application */
+
+#footerIconList{
+  list-style: none;
+  /* height: 50vh; */
+}

@@ -38,9 +38,7 @@ const Cover = () => {
           </div> 
         </div>
       </div>
-      {/* <div id="wave" className="container-fluid">
-          
-      </div> */}
+     
     </>
   );
 };
