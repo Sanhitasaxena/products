@@ -115,15 +115,53 @@ style sheet code, as we will have only one stylesheet in the whole application *
   /* display: inline; */
 }
 
-#headHeaderContentList li {
+/* #headHeaderContentList li {
+ 
+} */
+
+.headHeaderContentList-li, .headHeaderContentList-btn{
   margin: 15px;
   margin-top: 40px;
   font-size: 1.2em;
   cursor: pointer;
+  height: 14vh;
+ 
 }
 
-#headHeaderContentList li:hover {
+
+.headHeaderContentList-li:hover {
   color: red;
+}
+
+.headHeaderContentList-btn button{
+  border: none;
+  background: transparent;
+  outline: none;
+  /* background-color: red; */
+}
+
+/* STYLLING THE DROPDOWN */
+/* NOTE: Every id of "Footer" component will start from "footer" keyword, just to distinguish it from other
+style sheet code, as we will have only one stylesheet in the whole application */
+
+.dropdown-nav-items{
+  list-style: none;
+  background-color: rgb(193, 229, 243);
+  border-radius: 5px;
+  box-shadow: #203354;
+  padding: 15px;
+  /* margin: 20px; */
+  /* background-color: black; */
+  
+}
+
+.dropdown-nav-items Link{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-self: center;
+  width: fit-content;
+  background-color: red;
 }
 
 #headSearchBar {
@@ -348,3 +386,4 @@ style sheet code, as we will have only one stylesheet in the whole application *
   list-style: none;
   /* height: 50vh; */
 }
+
